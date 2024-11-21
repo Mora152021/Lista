@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Asistencia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+        }
+        .container {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <div class="header">
+        <img src="3.jpg" alt="Imagen 1"> 
+        <img src="1.jpg" alt="Imagen 2"> 
+    </div>
+
+    
+    <div class="container">
+        <h2>Lista de Asistencia</h2>
+
+        <form action="guardado.html" method="get">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de Cuenta</th>
+                        <th>Nombre</th>
+                        <th>Asistió</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><input type="text" name="num_cuenta_1" value="12345" readonly></td>
+                        <td><input type="text" name="nombre_1" value="Juan Pérez" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_1" value="si" required> Sí
+                            <input type="radio" name="asistencia_1" value="no" required> No
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><input type="text" name="num_cuenta_2" value="12346" readonly></td>
+                        <td><input type="text" name="nombre_2" value="Ana Gómez" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_2" value="si" required> Sí
+                            <input type="radio" name="asistencia_2" value="no" required> No
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="text" name="num_cuenta_3" value="12347" readonly></td>
+                        <td><input type="text" name="nombre_3" value="Carlos López" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_3" value="si" required> Sí
+                            <input type="radio" name="asistencia_3" value="no" required> No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="num_cuenta_4" value="12345" readonly></td>
+                        <td><input type="text" name="nombre_4" value="Juan Gonzalez" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_4" value="si" required> Sí
+                            <input type="radio" name="asistencia_4" value="no" required> No
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><input type="text" name="num_cuenta_5" value="12346" readonly></td>
+                        <td><input type="text" name="nombre_5" value="Ana Salvador" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_5" value="si" required> Sí
+                            <input type="radio" name="asistencia_5" value="no" required> No
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="text" name="num_cuenta_6" value="12347" readonly></td>
+                        <td><input type="text" name="nombre_6" value="Emmanuel MM" readonly></td>
+                        <td>
+                            <input type="radio" name="asistencia_6" value="si" required> Sí
+                            <input type="radio" name="asistencia_6" value="no" required> No
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <button type="submit" class="submit-btn">Guardar</button>
+        </form>
+    </div>
+
+</body>
+</html>

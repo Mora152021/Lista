@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Código QR</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Código QR para URL Local</h1>
+    
+    <div id="qrcode"></div>
+
+    <script>
+       
+        var localURL = "file:///D:/Lista%20de%20asistencia/index.html";
+        
+        
+        var qrcodeContainer = document.getElementById('qrcode');
+        var qrcode = new QRCode(qrcodeContainer, {
+            text: localURL,
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
+
+
